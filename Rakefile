@@ -7,7 +7,7 @@ TRUE_STRING = "TRUE"
 FALSE_STRING = "FALSE"
 CSC_STRING = " : "
 
-desc "*.fv なファイルを sha1 チェックして重複の管理を行う"
+desc "*.flv なファイルを sha1 チェックして重複の管理を行う"
 task :sha1_create do
   open("sha1.txt", "w") { |log|
     Dir.glob("*.flv").each do |file|
